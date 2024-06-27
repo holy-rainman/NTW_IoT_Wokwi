@@ -9,9 +9,11 @@
 char ssid[] = "Wokwi-GUEST";
 char pass[] = "";
 
+#define LED1  27
+
 BLYNK_WRITE(V0)
 { int pb1 = param.asInt();
-  digitalWrite(LED,pb1);
+  digitalWrite(LED1,pb1);
 }
 
 void setup()
